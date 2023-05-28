@@ -1,9 +1,8 @@
 displayName = Hidden Vanity
 author = direwolf420
-version = 0.1.2.3
+version = 0.2
 side = Client
 hideCode = false
 hideResources = false
 includeSource = false
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, *.md
-includePDB = true

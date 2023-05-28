@@ -8,15 +8,16 @@ namespace HiddenVanity
 	{
 		public override void Load()
 		{
-			On.Terraria.Player.UpdateVisibleAccessory += Player_UpdateVisibleAccessory; //accessories (check vanity inside)
+			On_Player.UpdateVisibleAccessory += Player_UpdateVisibleAccessory; //accessories (check vanity inside)
 
-			On.Terraria.Player.PlayerFrame += Player_PlayerFrame; //Armor vanity slots 1
-			On.Terraria.Main.DoUpdate_WhilePaused += Main_DoUpdate_WhilePaused; //Armor vanity slots 2
-			On.Terraria.Player.ApplyArmorSoundAndDustChanges += Player_ApplyArmorSoundAndDustChanges; //Armor vanity slots 3
-			On.Terraria.Player.ApplyEquipVanity_Item += Player_ApplyEquipVanity_Item; //Wings, werefolf/merman, modded
+			//boneArmor/frostArmor doesn't need fixing
+			On_Player.PlayerFrame += Player_PlayerFrame; //Armor vanity slots 1
+			On_Main.DoUpdate_WhilePaused += Main_DoUpdate_WhilePaused; //Armor vanity slots 2
+			On_Player.ApplyArmorSoundAndDustChanges += Player_ApplyArmorSoundAndDustChanges; //Armor vanity slots 3
+			On_Player.ApplyEquipVanity_Item += Player_ApplyEquipVanity_Item; //Wings, werewolf/merman, modded
 		}
 
-		private void Player_UpdateVisibleAccessory(On.Terraria.Player.orig_UpdateVisibleAccessory orig, Player self, int itemSlot, Item item, bool modded)
+		private void Player_UpdateVisibleAccessory(On_Player.orig_UpdateVisibleAccessory orig, Player self, int itemSlot, Item item, bool modded)
 		{
 			var stringColor = self.stringColor;
 			var handon = self.handon;
@@ -64,7 +65,7 @@ namespace HiddenVanity
 			HideEquips(self, stringColor, handon, handoff, backpack, tail, back, front, shoe, waist, shield, neck, faceHead, faceFlower, face, beard, balloonFront, balloon, wings, yoraiz0rEye, yoraiz0rDarkness, leinforsHair, hasFloatingTube, hasUnicornHorn, hasAngelHalo, hasRainbowCursor);
 		}
 
-		private static void HideEquips(Player self, int stringColor, sbyte handon, sbyte handoff, sbyte backpack, sbyte tail, sbyte back, sbyte front, sbyte shoe, sbyte waist, sbyte shield, sbyte neck, sbyte faceHead, sbyte faceFlower, sbyte face, sbyte beard, sbyte balloonFront, sbyte balloon, int wings, int yoraiz0rEye, bool yoraiz0rDarkness, bool leinforsHair, bool hasFloatingTube, bool hasUnicornHorn, bool hasAngelHalo, bool hasRainbowCursor)
+		private static void HideEquips(Player self, int stringColor, int handon, int handoff, int backpack, int tail, int back, int front, int shoe, int waist, int shield, int neck, int faceHead, int faceFlower, int face, int beard, int balloonFront, int balloon, int wings, int yoraiz0rEye, bool yoraiz0rDarkness, bool leinforsHair, bool hasFloatingTube, bool hasUnicornHorn, bool hasAngelHalo, bool hasRainbowCursor)
 		{
 			Config cfg = Config.Instance;
 
@@ -259,7 +260,7 @@ namespace HiddenVanity
 			{
 				shoe = item.shoeSlot;
 				if (!Male && ArmorIDs.Shoe.Sets.MaleToFemaleID[shoe] > 0)
-					shoe = (sbyte)ArmorIDs.Shoe.Sets.MaleToFemaleID[shoe];
+					shoe = ArmorIDs.Shoe.Sets.MaleToFemaleID[shoe];
 			}
 
 			if (item.waistSlot > 0)
@@ -315,14 +316,14 @@ namespace HiddenVanity
 		}
 		*/
 
-		private void Player_PlayerFrame(On.Terraria.Player.orig_PlayerFrame orig, Player self)
+		private void Player_PlayerFrame(On_Player.orig_PlayerFrame orig, Player self)
 		{
 			orig(self);
 
 			HideVanityArmor(self);
 		}
 
-		private void Main_DoUpdate_WhilePaused(On.Terraria.Main.orig_DoUpdate_WhilePaused orig)
+		private void Main_DoUpdate_WhilePaused(On_Main.orig_DoUpdate_WhilePaused orig)
 		{
 			orig();
 
@@ -348,14 +349,14 @@ namespace HiddenVanity
 			 */
 		}
 
-		private void Player_ApplyArmorSoundAndDustChanges(On.Terraria.Player.orig_ApplyArmorSoundAndDustChanges orig, Player self)
+		private void Player_ApplyArmorSoundAndDustChanges(On_Player.orig_ApplyArmorSoundAndDustChanges orig, Player self)
 		{
 			orig(self);
 
 			HideVanityArmor(self);
 		}
 
-		private void Player_ApplyEquipVanity_Item(On.Terraria.Player.orig_ApplyEquipVanity_Item orig, Player self, Item currentItem)
+		private void Player_ApplyEquipVanity_Item(On_Player.orig_ApplyEquipVanity_Item orig, Player self, Item currentItem)
 		{
 			//Only called on vanity slots (on vanilla and modded slots)
 			var stringColor = self.stringColor;

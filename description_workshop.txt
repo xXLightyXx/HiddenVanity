@@ -1,4 +1,4 @@
-This clientside mod allows you to make all items equipped in vanity slots not show up on the player. Configurable.
+This clientside mod allows you to make all items equipped in vanity slots not show up on your player and other players. Configurable.
 
 [hr][/hr]
 [b]Localization:[/b]

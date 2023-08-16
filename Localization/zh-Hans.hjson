@@ -1,0 +1,170 @@
+Mods: {
+	HiddenVanity: {
+		Configs: {
+			Config: {
+				// DisplayName: Config
+
+				HideRainbowCursor: {
+					// Tooltip: ""
+					// Label: Hide Rainbow Cursor
+				}
+
+				HideAngelHalo: {
+					// Tooltip: ""
+					// Label: Hide Angel Halo
+				}
+
+				HideUnicornHorn: {
+					// Tooltip: ""
+					// Label: Hide Fake Unicorn Horn
+				}
+
+				HideFloatingTube: {
+					// Tooltip: ""
+					// Label: Hide Inner Tube
+				}
+
+				HideLeinforsHair: {
+					// Tooltip: ""
+					// Label: Hide Leinfors' Luxury Shampoo
+				}
+
+				HideYoraiz0rDarkness: {
+					// Tooltip: ""
+					// Label: Hide Yoraiz0r's Scowl
+				}
+
+				HideYoraiz0rEye: {
+					// Tooltip: ""
+					// Label: Hide Yoraiz0r's Spell
+				}
+
+				Headers: {
+					// SpecialToggles: == Special Toggles ==
+					// SeparateToggles: == Separate Toggles ==
+					// ToggleAll: == Toggle All ==
+				}
+
+				HideStringColor: {
+					// Tooltip: ""
+					// Label: Hide Yoyo String Color
+				}
+
+				HideFaceFlower: {
+					// Tooltip: ""
+					// Label: Hide Face (Flower)
+				}
+
+				HideFaceHead: {
+					// Tooltip: ""
+					// Label: Hide Face (Head)
+				}
+
+				HideFace: {
+					// Tooltip: ""
+					// Label: Hide Face
+				}
+
+				HideBeard: {
+					// Tooltip: ""
+					// Label: Hide Beard
+				}
+
+				HideTail: {
+					// Tooltip: ""
+					// Label: Hide Tail
+				}
+
+				HideBackpack: {
+					// Tooltip: ""
+					// Label: Hide Backpack
+				}
+
+				HideBack: {
+					// Tooltip: ""
+					// Label: Hide Back
+				}
+
+				HideFront: {
+					// Tooltip: ""
+					// Label: Hide Front
+				}
+
+				HideShoe: {
+					// Tooltip: ""
+					// Label: Hide Shoe
+				}
+
+				HideWaist: {
+					// Tooltip: ""
+					// Label: Hide Waist
+				}
+
+				HideWings: {
+					// Tooltip: ""
+					// Label: Hide Wings
+				}
+
+				HideShield: {
+					// Tooltip: ""
+					// Label: Hide Shield
+				}
+
+				HideNeck: {
+					// Tooltip: ""
+					// Label: Hide Neck
+				}
+
+				HideHandOff: {
+					// Tooltip: ""
+					// Label: Hide Back Hand
+				}
+
+				HideHandOn: {
+					// Tooltip: ""
+					// Label: Hide Main Hand
+				}
+
+				HideBalloonFront: {
+					// Tooltip: ""
+					// Label: Hide Balloon (Front)
+				}
+
+				HideBalloon: {
+					// Tooltip: ""
+					// Label: Hide Balloon
+				}
+
+				HideLegs: {
+					// Tooltip: ""
+					// Label: Hide Leggings
+				}
+
+				HideBody: {
+					// Tooltip: ""
+					// Label: Hide Chestplate
+				}
+
+				HideHead: {
+					// Tooltip: ""
+					// Label: Hide Helmet
+				}
+
+				HideAllEquips: {
+					// Tooltip: Toggle if all equips should be hidden (if on, takes precedence over the separate toggles)
+					// Label: Hide All Equips
+				}
+
+				HideOtherVanity: {
+					// Tooltip: Toggle vanity on other players
+					// Label: Hide other player vanity
+				}
+
+				HideOwnVanity: {
+					// Tooltip: Toggle vanity on own player
+					// Label: Hide own player vanity
+				}
+			}
+		}
+	}
+}

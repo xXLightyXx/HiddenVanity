@@ -6,37 +6,37 @@ Mods: {
 
 				HideRainbowCursor: {
 					Tooltip: ""
-					Label: Скрыть Радужный курсор
+					Label: Скрыть: {$ItemName.RainbowCursor}
 				}
 
 				HideAngelHalo: {
 					Tooltip: ""
-					Label: Скрыть Нимб ангела
+					Label: Скрыть: {$ItemName.AngelHalo}
 				}
 
 				HideUnicornHorn: {
 					Tooltip: ""
-					Label: Скрыть Фальшивый рог единорога
+					Label: Скрыть: {$ItemName.UnicornHornHat}
 				}
 
 				HideFloatingTube: {
 					Tooltip: ""
-					Label: Скрыть Воздушную камеру
+					Label: Скрыть: {$ItemName.FloatingTube}
 				}
 
 				HideLeinforsHair: {
 					Tooltip: ""
-					Label: Скрыть Модный шампунь Leinfors
+					Label: Скрыть: {$ItemName.LeinforsAccessory}
 				}
 
 				HideYoraiz0rDarkness: {
 					Tooltip: ""
-					Label: Скрыть Угрюмый вид Yoraiz0r
+					Label: Скрыть: {$ItemName.Yoraiz0rDarkness}
 				}
 
 				HideYoraiz0rEye: {
 					Tooltip: ""
-					Label: Скрыть Заклятие Yoraiz0r
+					Label: Скрыть: {$ItemName.Yoraiz0rWings}
 				}
 
 				Headers: {

@@ -1,3 +1,1 @@
-* Updated to 1.4.4 tml
-* All individual settings not default to "Off" (This doesn't change default behavior as the "Hide All" is still kept "On")
-* Now localizable. Read the mod description for more info
+* Added russian localization. Thanks GodHybrid!

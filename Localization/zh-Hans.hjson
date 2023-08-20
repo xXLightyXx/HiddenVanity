@@ -6,37 +6,37 @@ Mods: {
 
 				HideRainbowCursor: {
 					// Tooltip: ""
-					// Label: Hide Rainbow Cursor
+					// Label: Hide {$ItemName.RainbowCursor}
 				}
 
 				HideAngelHalo: {
 					// Tooltip: ""
-					// Label: Hide Angel Halo
+					// Label: Hide {$ItemName.AngelHalo}
 				}
 
 				HideUnicornHorn: {
 					// Tooltip: ""
-					// Label: Hide Fake Unicorn Horn
+					// Label: Hide {$ItemName.UnicornHornHat}
 				}
 
 				HideFloatingTube: {
 					// Tooltip: ""
-					// Label: Hide Inner Tube
+					// Label: Hide {$ItemName.FloatingTube}
 				}
 
 				HideLeinforsHair: {
 					// Tooltip: ""
-					// Label: Hide Leinfors' Luxury Shampoo
+					// Label: Hide {$ItemName.LeinforsAccessory}
 				}
 
 				HideYoraiz0rDarkness: {
 					// Tooltip: ""
-					// Label: Hide Yoraiz0r's Scowl
+					// Label: Hide {$ItemName.Yoraiz0rDarkness}
 				}
 
 				HideYoraiz0rEye: {
 					// Tooltip: ""
-					// Label: Hide Yoraiz0r's Spell
+					// Label: Hide {$ItemName.Yoraiz0rWings}
 				}
 
 				Headers: {
@@ -156,12 +156,12 @@ Mods: {
 				}
 
 				HideOtherVanity: {
-					// Tooltip: Toggle vanity on other players
+					// Tooltip: Apply vanity toggles on other players
 					// Label: Hide other player vanity
 				}
 
 				HideOwnVanity: {
-					// Tooltip: Toggle vanity on own player
+					// Tooltip: Apply vanity toggles on own player
 					// Label: Hide own player vanity
 				}
 			}

@@ -4,4 +4,4 @@ This clientside mod allows you to make all items equipped in vanity slots not sh
 [b]Localization:[/b]
 If you want to add support for different languages, you are welcome to contribute localizations here: [b][url=https://github.com/direwolf420/HiddenVanity]GitHub[/url][/b]
 List of localization contributors:
-* None!
+* Russian: [b]GodHybrid[/b]

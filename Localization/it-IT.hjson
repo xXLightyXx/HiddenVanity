@@ -82,7 +82,7 @@ Mods: {
 
 				HideBack: {
 					Tooltip: ""
-					Label: Nascondi dorso 
+					Label: Nascondi dorso
 				}
 
 				HideFront: {
